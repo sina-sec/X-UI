@@ -23,3 +23,4 @@ func (j *CheckXrayRunningJob) Run() {
 	}
 	j.xrayService.SetToNeedRestart()
 }
+ 
