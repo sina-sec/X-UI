@@ -24,3 +24,4 @@ func (s *PanelService) RestartPanel(delay time.Duration) error {
 	}()
 	return nil
 }
+ 
