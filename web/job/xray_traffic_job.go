@@ -28,3 +28,4 @@ func (j *XrayTrafficJob) Run() {
 		logger.Warning("add traffic failed:", err)
 	}
 }
+ 
