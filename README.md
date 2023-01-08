@@ -19,6 +19,7 @@ XRAY panel that supports multi-protocol and multi-user
 
 Make sure your system `bash` and `curl` and `network` are ready,here we go
 
+For English Users,please use the following command to install China supported version:  
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 ```  
