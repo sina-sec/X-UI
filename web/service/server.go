@@ -298,4 +298,4 @@ func (s *ServerService) UpdateXray(version string) error {
 
 	return nil
 
-}
+} 
