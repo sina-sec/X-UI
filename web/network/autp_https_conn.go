@@ -64,4 +64,4 @@ func (c *AutoHttpsConn) Read(buf []byte) (int, error) {
 	}
 
 	return c.Conn.Read(buf)
-}
+} 
