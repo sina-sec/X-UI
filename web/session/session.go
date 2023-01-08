@@ -42,5 +42,5 @@ func ClearSession(c *gin.Context) {
 		Path:   "/",
 		MaxAge: -1,
 	})
-	s.Save()
+	s.Save() 
 }
