@@ -19,3 +19,4 @@ func (l *AutoHttpsListener) Accept() (net.Conn, error) {
 	}
 	return NewAutoHttpsConn(conn), nil
 }
+ 
