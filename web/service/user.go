@@ -70,4 +70,4 @@ func (s *UserService) UpdateFirstUser(username string, password string) error {
 	user.Username = username
 	user.Password = password
 	return db.Save(user).Error
-}
+} 
