@@ -1,4 +1,5 @@
 # x-ui
+[简体中文](./README.md)| ENGLISH 
 
 XRAY panel that supports multi-protocol and multi-user
 # Features
