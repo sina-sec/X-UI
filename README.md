@@ -16,10 +16,16 @@ XRAY panel that supports multi-protocol and multi-user
 
 # Install & Upgrade
 
+
+Make sure your system `bash` and `curl` and `network` are ready,here we go
+
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+```  
+For English Users,please use the following command to install English supported version:  
 ```
-
+bash <(curl -Ls https://raw.githubusercontent.com/sina-sec/x-ui/master/install_en.sh)
+``` 
 ## Manual installation & upgrade
 
 1. First download the latest compressed package from https://github.com/sina-sec/x-ui/releases, generally choose the `amd64` architecture
