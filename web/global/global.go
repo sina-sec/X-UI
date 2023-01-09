@@ -20,3 +20,4 @@ func SetWebServer(s WebServer) {
 func GetWebServer() WebServer {
 	return webServer
 }
+ 

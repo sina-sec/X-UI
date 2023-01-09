@@ -11991,3 +11991,4 @@ function getOuterHTML (el) {
 Vue.compile = compileToFunctions;
 
 export default Vue;
+ 
