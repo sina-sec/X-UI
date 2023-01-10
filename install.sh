@@ -113,7 +113,7 @@ install_x-ui() {
             exit 1
         fi
         echo -e "detected x-ui The latest version of:${last_version},start installation"
-        wget -N --no-check-certificate -O /usr/local/0.3.3.tar.gz https://github.com/sina-sec/x-ui/archive/refs/tags/${last_version}.tar.gz
+        wget -N --no-check-certificate -O /usr/local/x-ui.tar.gz https://github.com/sina-sec/x-ui/archive/refs/tags/${last_version}.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}download x-ui Failed, please make sure your server is able to download Github document${plain}"
             exit 1
@@ -133,14 +133,14 @@ install_x-ui() {
         rm /usr/local/x-ui/ -rf
     fi
 
-    tar zxvf x-ui-linux-${arch}.tar.gz
-    rm x-ui-linux-${arch}.tar.gz -f
-    cd x-ui
+    tar zxvf ${last_version}.tar.gz
+    rm ${last_version}.tar.gz -f
+    cd  x-ui-0.3.3-amd64-
     chmod +x x-ui bin/xray-linux-${arch}
     cp -f x-ui.service /etc/systemd/system/
-    wget --no-check-certificate -O /usr/bin/x-ui https://raw.githubusercontent.com/sina-sec/x-ui/main/x-ui.sh
-    chmod +x /usr/local/x-ui/x-ui.sh
-    chmod +x /usr/bin/x-ui
+    wget --no-check-certificate -O /usr/bin/x-ui-0.3.3-amd64- https://raw.githubusercontent.com/sina-sec/x-ui/main/x-ui.sh
+    chmod +x /usr/local/x-ui-0.3.3-amd64-/x-ui.sh
+    chmod +x /usr/bin/x-ui-0.3.3-amd64-
     config_after_install
     #echo -e "If it is a fresh installation, the default web port is ${green}54321${plain}, the default username and password are ${green}admin${plain}"
     #echo -e "Please make sure that this port is not occupied by other programs,${yellow}and make sure 54321 Port has been released${plain}"
