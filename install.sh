@@ -113,16 +113,16 @@ install_x-ui() {
             exit 1
         fi
         echo -e "detected x-ui The latest version of:${last_version},start installation"
-        wget -N --no-check-certificate -O /usr/local/x-ui-linux-${arch}.tar.gz https://github.com/sina-sec/x-ui/releases/download/${last_version}/x-ui-linux-${arch}.tar.gz
+        wget -N --no-check-certificate -O /usr/local/x-ui-linux-${arch}.tar.gz https://github.com/sina-sec/x-ui/releases/download/${last_version}/${arch}.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}download x-ui Failed, please make sure your server is able to download Github document${plain}"
             exit 1
         fi
     else
         last_version=$1
-        url="https://github.com/sina-sec/x-ui/releases/download/${last_version}/x-ui-linux-${arch}.tar.gz"
+        url="https://github.com/sina-sec/x-ui/releases/download/${last_version}/${arch}.tar.gz"
         echo -e "start installation x-ui v$1"
-        wget -N --no-check-certificate -O /usr/local/x-ui-linux-${arch}.tar.gz ${url}
+        wget -N --no-check-certificate -O /usr/local/${arch}.tar.gz ${url}
         if [[ $? -ne 0 ]]; then
             echo -e "${red}download x-ui v$1 Failed, make sure this version exists${plain}"
             exit 1
